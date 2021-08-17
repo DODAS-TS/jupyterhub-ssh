@@ -319,7 +319,7 @@ class JupyterHubSSH(Application):
             line_editor=False,
             password_auth=True,
             server_host_keys=[self.host_key_path],
-            agent_forwarding=False,  # The cause of so much pain! Let's not allow this by default
+            agent_forwarding=True,  # The cause of so much pain! Let's not allow this by default
             keepalive_interval=30,  # FIXME: Make this configurable
         )
 
